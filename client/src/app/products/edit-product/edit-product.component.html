@@ -2,12 +2,12 @@
     <h1>Edit</h1>
     <form [formGroup]="formEdit" (ngSubmit)="onSubmit()">
       <div class="form-group">
-      <input formControlName="name" type="text" id="name" name="name" class="form-control" placeholder="enter name" />
+      <input required formControlName="name" type="text" id="name" name="name" class="form-control" placeholder="enter name" />
     </div>
     <div class="form-group">
-      <input type="text" id="detail" formControlName="detail" name="detail" class="form-control" placeholder="enter detail" />
+      <input required type="text" id="detail" formControlName="detail" name="detail" class="form-control" placeholder="enter detail" />
     </div>
       <button [disabled]="!formEdit.valid" class="btn btn-success">Update</button>
-      <button class="btn btn-basic" style="margin-left:10px"><i class="fa fa-repeat"></i></button>
+      <button class="btn btn-basic" style="margin-left:10px"  (click)="back()"><i class="fa fa-repeat"></i></button>
     </form>
   </div>

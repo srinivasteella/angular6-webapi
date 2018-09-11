@@ -31,5 +31,7 @@ formEdit:FormGroup
       this.router.navigate([''])
     })
   }
-
+  back(){
+    this.router.navigate([''])
+  }
 }
