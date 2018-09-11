@@ -1,0 +1,13 @@
+<div>
+  <h1>Add</h1>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+    <input formControlName="name" type="text" id="name" placeholder="Product Name" name="name" class="form-control"  />
+  </div>
+  <div class="form-group">
+    <input type="text" id="detail" formControlName="detail" class="form-control" placeholder="enter details" name="detail"  />
+  </div>
+    <button [disabled]="!addForm.valid" class="btn btn-success"><i class="fa fa-floppy-o"></i></button>
+    <button class="btn btn-basic" style="margin-left:10px" (click)="back()"><i class="fa fa-repeat"></i></button>
+  </form>
+</div>
