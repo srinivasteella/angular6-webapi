@@ -21,11 +21,11 @@ The repository consists of projects as below:
 
 <img width="1469" alt="list" src="https://github.com/AJEETX/angular6-webapi/blob/master/login.png">
 
-<img width="1469" alt="list" src="https://github.com/AJEETX/angular6-webapi/blob/master/list.png">
+<img width="1469" alt="list" src="https://github.com/AJEETX/angular6-webapi/blob/master/products.png">
 
-<img width="1469" alt="add" src="https://github.com/AJEETX/angular6-webapi/blob/master/add.png">
+<img width="1469" alt="add" src="https://github.com/AJEETX/angular6-webapi/blob/master/add-product.png">
 
-<img width="1469" alt="edit" src="https://github.com/AJEETX/angular6-webapi/blob/master/edit.png">
+<img width="1469" alt="edit" src="https://github.com/AJEETX/angular6-webapi/blob/master/edit-product.png">
 
 ### Setup detail
 
