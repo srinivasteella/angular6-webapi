@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-  loginForm: FormGroup
+  registerForm: FormGroup
   loading = false;
   submitted = false;
   error = '';
@@ -18,7 +18,7 @@ export class RegisterComponent implements OnInit {
     private authservice:AuthService) { }
 
   ngOnInit() {
-    this.loginForm = this.formBuilder.group({
+    this.registerForm = this.formBuilder.group({
       firstname: ['', Validators.required],
       lastname: ['', Validators.required],
       username: ['', Validators.required],
@@ -26,11 +26,11 @@ export class RegisterComponent implements OnInit {
   });
   this.authservice.logout();
   }
-    get f() { return this.loginForm.controls; }
+    get f() { return this.registerForm.controls; }
     onSubmit() {
       this.submitted = true;
 
-      if (this.loginForm.invalid) {
+      if (this.registerForm.invalid) {
           return;
       }
 
