@@ -17,6 +17,10 @@ The repository consists of projects as below:
 | 2 | client | angular 6 as front end   | client folder |
 
 
+<img width="1469" alt="list" src="https://github.com/AJEETX/angular6-webapi/blob/master/register.png">
+
+<img width="1469" alt="list" src="https://github.com/AJEETX/angular6-webapi/blob/master/login.png">
+
 <img width="1469" alt="list" src="https://github.com/AJEETX/angular6-webapi/blob/master/list.png">
 
 <img width="1469" alt="add" src="https://github.com/AJEETX/angular6-webapi/blob/master/add.png">
