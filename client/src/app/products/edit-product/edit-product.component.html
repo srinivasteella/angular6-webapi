@@ -1,4 +1,6 @@
 <div>
+    <p>Welcome <i class="fa fa-quote-left right"></i><i>{{user}}</i><i class="fa fa-quote-right left"></i> 
+      <a [routerLink]="['/login']" class="farleft" ><i class="fa fa-power-off right"></i>Logout</a></p>
     <h1>Edit</h1>
     <form [formGroup]="formEdit" (ngSubmit)="onSubmit()">
       <div class="form-group">
@@ -7,7 +9,7 @@
     <div class="form-group">
       <input required type="text" id="detail" formControlName="detail" name="detail" class="form-control" placeholder="enter detail" />
     </div>
-      <button [disabled]="!formEdit.valid" class="btn btn-success">Update</button>
+      <button [disabled]="!formEdit.valid" class="btn btn-success"><i class="fa fa-edit right"></i>Update</button>
       <button class="btn btn-basic" style="margin-left:10px"  (click)="back()"><i class="fa fa-repeat"></i></button>
     </form>
   </div>

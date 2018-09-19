@@ -1,5 +1,8 @@
 <div>
-  <button class="btn btn-primary" (click)="addProduct()">Add product</button>
+  <p>Welcome <i class="fa fa-quote-left right"></i><i>{{user}}</i><i class="fa fa-quote-right left"></i> 
+    <a [routerLink]="['/login']" class="farleft" ><i class="fa fa-power-off right"></i>Logout</a></p>
+
+  <button class="btn btn-primary" (click)="addProduct()"><i class="fa fa-thumbs-up right"></i>Add product</button>
   <h2>Products List</h2>
   <table class="table table-striped">
     <thead>

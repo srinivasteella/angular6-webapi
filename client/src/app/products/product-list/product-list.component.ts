@@ -10,8 +10,10 @@ import {Router} from "@angular/router";
 })
 export class ProductListComponent implements OnInit {
   products:Product[]
-  constructor(private router:Router, private service:ProductService) { }
-
+  user:string
+  constructor(private router:Router, private service:ProductService) {
+    this.user=localStorage.getItem('user')
+   }
   ngOnInit() {
   this.service.getProducts()
   .subscribe(data=>{

@@ -1,6 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
+using DB;
+using WebApi.Model;
 
+namespace  WebApi.Services
+{
 public interface IProductService 
 {
     List<Product> Get(string q);
@@ -58,4 +62,5 @@ public class ProductService : IProductService
         _context.SaveChanges();
         return update is null ? false : true;
     }
+}
 }

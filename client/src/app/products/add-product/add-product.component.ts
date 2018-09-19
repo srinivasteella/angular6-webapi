@@ -9,7 +9,11 @@ import { Router } from '@angular/router';
 })
 export class AddProductComponent implements OnInit {
 addForm:FormGroup
-  constructor(private formBuilder:FormBuilder,private service:ProductService,private router:Router) { }
+user:string
+
+  constructor(private formBuilder:FormBuilder,private service:ProductService,private router:Router) {
+    this.user=localStorage.getItem('user')
+   }
 
   ngOnInit() {
     this.addForm=this.formBuilder.group({

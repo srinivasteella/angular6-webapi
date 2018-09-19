@@ -1,6 +1,12 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using WebApi.Model;
+using WebApi.Services;
 
+namespace WebApi.Controllers
+{
+    // [Authorize]
    [Route("products")]
     public class ProductsController : Controller
     {
@@ -56,3 +62,4 @@ using Microsoft.AspNetCore.Mvc;
             return Ok(new {Status= "Product deleted"});
         }
     }
+}

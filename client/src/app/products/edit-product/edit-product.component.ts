@@ -10,7 +10,11 @@ import { Router } from '@angular/router';
 })
 export class EditProductComponent implements OnInit {
 formEdit:FormGroup
-  constructor(private formBuilder:FormBuilder,private service:ProductService,private router:Router) { }
+user:string
+
+  constructor(private formBuilder:FormBuilder,private service:ProductService,private router:Router) { 
+    this.user=localStorage.getItem('user')
+  }
 
   ngOnInit() {
     let id=localStorage.getItem('id')
