@@ -6,7 +6,7 @@ using WebApi.Services;
 
 namespace WebApi.Controllers
 {
-    // [Authorize]
+    [Authorize]
    [Route("products")]
     public class ProductsController : Controller
     {

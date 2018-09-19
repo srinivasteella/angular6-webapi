@@ -97,6 +97,8 @@ namespace backend
                         PropertyNameHandling.CamelCase;
                 });
             // app.UseHttpsRedirection();
+            app.UseAuthentication();
+            
             app.UseMvc();
         }
     }

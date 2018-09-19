@@ -26,7 +26,8 @@ export class AuthService {
     return !!localStorage.getItem('token')
   }
   logout(){
-    localStorage.removeItem('token');
+    localStorage.removeItem('token')
+    localStorage.removeItem('user')
   }
   register(firstname:string,lastname:string, username:string,password:string){
     return this.http.post<any>(this.baseUrl+ '/register',{ firstname,lastname, username, password })

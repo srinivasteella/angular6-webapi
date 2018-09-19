@@ -8,7 +8,6 @@ export class ProductService {
 baseUrl:string="http://localhost:5000/products"
   constructor(private http:HttpClient) { }
 getProducts(){
-  console.log('hi')
   return this.http.get<Product[]>(this.baseUrl);
 }
 getProductById(id:number){
